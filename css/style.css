@@ -32,6 +32,12 @@ body{
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
+    transition: 0.4s ease,
+    opacity 0.4s ease;
+}
+
+.sitenav-link:hover{
+    color: #ff7500;
 }
 
 .main-button{
@@ -158,8 +164,13 @@ body{
     text-decoration: none;
     line-height: 19px;
     color: #252420;
+    transition: 0.4s ease, 
+    opacity 0.4s ease;
 }
 
+.site-footer-links a:hover{
+    color: #ff7500;
+}
 .footer-bootom{
     display: flex;
     justify-content: space-between;
