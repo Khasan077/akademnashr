@@ -11,7 +11,10 @@ body{
     background-color: #fff;
     display: flex;
     align-items: center;
+    border-top: 5px solid #ff7500;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .site-header-action{
@@ -22,6 +25,7 @@ body{
 .sitenav-list{
     display: flex;
     list-style: none;
+    padding: 0;
 }
 
 .sitenav-link{
@@ -41,17 +45,22 @@ body{
 }
 
 .main-button{
+    display: inline-block;
+    padding: 12px 24px;
     font-size: 13px;
     line-height: 15px;
     background-color: #ff7500;
+    border-radius: 5px;
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
 
 }
 
 .hero{
     display: flex;
     align-items: center;
+    padding: 80px 0;
     justify-content: space-between;
     background-color: #252420;
     color: #fff;
@@ -84,20 +93,26 @@ body{
 }
 
 .feature{
+    padding: 210px 0; 
     width: 340px;
 }
 
 .fetures-list{
     display: flex;
+    padding: 0;
     align-items: center;
     justify-content: space-between;
     list-style: none;
 }
 
 .feature-icon-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     background-color: rgba(255, 117, 0, 0.2);
+    border-radius: 50%;
 }
 
 .feature-title{
@@ -115,6 +130,8 @@ body{
 
 .promo{
     display: flex;
+    border-radius: 12px;
+    padding: 120px 0 160px 0;
     align-items: center;
     justify-content: space-between;
     background-color: #252420;
@@ -143,7 +160,8 @@ body{
 
 .site-footer{
      background-color: #fff;
-}
+     padding: 56px 0;
+} 
 
 .footer-header{
     display: flex;
