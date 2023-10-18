@@ -1,20 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500;700&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
+
 body{
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5px;
     font-family: "Roboto", "Arial", sans-serif;
 }
 
+.container{
+    width: 100%;
+    min-width: 1260px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .site-header{
     background-color: #fff;
-    display: flex;
-    align-items: center;
     border-top: 5px solid #ff7500;
-    justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.site-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link{
+    display: block;
+    cursor: pointer;
 }
 
 .site-header-action{
@@ -24,8 +48,18 @@ body{
 
 .sitenav-list{
     display: flex;
+    margin: 0;
+    margin-right: 32px;
     list-style: none;
     padding: 0;
+}
+
+.sitenav-item{
+    margin-right: 32px;
+}
+
+.sitenav-item:last-child{
+    margin-right: 0;
 }
 
 .sitenav-link{
@@ -58,20 +92,31 @@ body{
 }
 
 .hero{
-    display: flex;
-    align-items: center;
     padding: 80px 0;
-    justify-content: space-between;
     background-color: #252420;
     color: #fff;
 } 
 
+.hero-heading{
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 40px;
+    line-height: 1.2;
 
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .orange-line{
+    margin: 0;
     width: 80px;
     height: 3px;
     background-color: #ff7500;
+    margin-bottom: 40px;
 }
 
 .hero-img{
@@ -80,21 +125,27 @@ body{
 }
 
 .hero-text{
+    width: 70%;
+    margin-top: 0;
     font-size: 16xp;
     line-height: 1.5;
     letter-spacing: 0.5;
 }
 
+
+/* Features */
+
+.features{
+    padding: 210px 0; 
+}
+
 .features-heading{
+    margin-top: 0;
+    margin-bottom: 72px;
     width: 400px;
     font-size: 72px;
     line-height: 1.2;
     letter-spacing: 0.5;
-}
-
-.feature{
-    padding: 210px 0; 
-    width: 340px;
 }
 
 .fetures-list{
@@ -122,6 +173,7 @@ body{
 }
 
 .feature-info{
+    width: 60%;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.5;
@@ -129,9 +181,13 @@ body{
 
 
 .promo{
-    display: flex;
-    border-radius: 12px;
     padding: 120px 0 160px 0;
+}
+
+.promo-inner{
+    display: flex;
+    padding: 64px;
+    border-radius: 12px;
     align-items: center;
     justify-content: space-between;
     background-color: #252420;
@@ -178,9 +234,10 @@ body{
 }
 
 .site-footer-links a{
-    font-size: 16px;
+    display: block;
+    font-size: 18px;
     text-decoration: none;
-    line-height: 19px;
+    line-height: 32px;
     color: #252420;
     transition: 0.4s ease, 
     opacity 0.4s ease;
